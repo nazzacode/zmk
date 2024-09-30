@@ -1,0 +1,12 @@
+file_format: "1"
+id: embodictrlr
+name: "Embodi CtrlR"
+type: shield
+# url: 
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - embodi_ctrlr_left
+  - embodi_ctrlr_right

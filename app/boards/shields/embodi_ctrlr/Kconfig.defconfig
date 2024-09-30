@@ -1,0 +1,23 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_EMBODI_CTRLR_LEFT
+
+	config ZMK_KEYBOARD_NAME
+		default "Embodi CtrlR"
+
+	config ZMK_SPLIT_ROLE_CENTRAL
+		default y
+
+endif # SHIELD_EMBODI_CTRLR_LEFT
+
+
+if SHIELD_EMBODI_CTRLR_LEFT || SHIELD_EMBODI_CTRLR_RIGHT
+
+	config ZMK_SPLIT
+		default y
+	
+	config ZMK_BLE
+		default y
+ 
+endif # SHIELD_EMBODI_CTRLR_LEFT || SHIELD_EMBODI_CTRLR_RIGHT
